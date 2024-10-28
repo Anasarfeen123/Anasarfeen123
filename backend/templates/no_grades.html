@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text_A">No Folders Available for {{ subject }}</h1>
+<a href="{{ url_for('index') }}" class="back-button">
+    Back</a>
+{% endblock %}

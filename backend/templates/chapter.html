@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="text_A">{{ chapter }}</h1>
+
+<div class="container">
+    <h2>Available PDFs</h2>
+
+    <ul class="file-list">
+        {% for item in pdfs %}
+        {% set pdf = item[0] %}
+        {% set unique_id = item[1] %}
+            <li class="chapter-button">
+                <label for="checkbox-{{ unique_id }}">{{ pdf }}</label>
+                <a href="{{ url_for('view_pdf', subject=subject, grade=grade, chapter=chapter, filename=pdf) }}" target="_blank">View PDF</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h2>External Links</h2>
+    <ul class="file-list">
+        {% for url in urls %}
+            <li class="chapter-button">
+                <a href="{{ url.url }}" target="_blank">{{ url.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<a href="{{ url_for('chapters', subject=subject, grade=grade) }}" class="back-button">Back</a>
+
+{% endblock %}

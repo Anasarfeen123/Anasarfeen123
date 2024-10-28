@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ subject }} / {{ grade }}{% endblock %}
+
+{% block content %}
+<h1 class="text_A">{{ subject }} - {{ grade }}</h1>
+
+{% for original_chapter, cleaned_chapter, chapter_icon in chapters %}
+    <a href="{{ url_for('chapter_contents', subject=subject, grade=grade, chapter=original_chapter) }}" class="chapter-button" >
+        <img src="{{ url_for('static', filename='icons/' ~ chapter_icon) }}" alt="{{ cleaned_chapter }} Icon" style="width:40px; height:40px; margin-right:10px;">
+        {{ cleaned_chapter.replace('_', ' ') }}
+    </a>
+{% endfor %}
+<a href="{{ url_for('grades', subject=subject) }}" class="back-button">Back</a>
+{% endblock %}

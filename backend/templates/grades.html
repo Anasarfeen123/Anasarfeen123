@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ subject }}{% endblock %}
+
+{% block content %}
+<h1 class="text_A">{{ subject }}</h1>
+<div class="grade-container">
+    {% for grade in grades %}
+        <a href="{{ url_for('chapters', subject=subject, grade=grade) }}" class="grade_button">
+            <img src="{{ url_for('static', filename='icons/' + grade|lower + '.png') }}" alt="{{ grade }} Icon" class="grade-icon">
+            <span>{{ grade }}</span>
+        </a>
+    {% endfor %}
+</div>
+
+<a href="{{ url_for('index') }}" class="back-button">
+    Back
+</a>
+{% endblock %}

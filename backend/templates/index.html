@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Materials</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text_AB">Study Materials</h1>
+        <div class="row mt-4">
+            {% for subject in subjects %}
+                <div class="col-md-3 text-center">
+                    <a href="{{ url_for('grades', subject=subject) }}" class="subject-button">
+                        <img src="{{ url_for('static', filename=subject_icons.get(subject, default_icon)) }}" alt="{{ subject }}" class="img-fluid">
+                        <span>{{ subject }}</span>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

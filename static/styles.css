@@ -1,0 +1,291 @@
+/* Main subject button */
+.subject-button {
+    display: inline-block;
+    padding: 25px 20px;
+    margin: 15px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #007bff;
+    background: linear-gradient(135deg, #f9f9f9 0%, #e0f7fac7 100%);
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border-color 0.3s, transform 0.3s;
+    text-align: center;
+    width: 170px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    animation: hoverAnimation 0.3s ease-in-out;
+}
+
+.subject-button:hover {
+    background-color: #b4d8ff9f;
+    color: #007bff;
+    text-decoration: none;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3), 0 12px 25px rgba(0, 123, 255, 0.2);
+    border-color: #3898ff;
+    transform: translateY(-5px);
+}
+
+.subject-button:hover::before {
+    left: 100%;
+}
+
+
+.subject-button:hover img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.subject-button span {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subject-button:hover {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5), 0 0 30px rgba(0, 123, 255, 0.3);
+}
+
+/* Grade button styling */
+.grade-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.grade_button {
+    border-radius: 10px;
+    color: #007bff;
+    background: linear-gradient(135deg, #f9f9f9 0%, #f0fdffc7 100%);
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border-color 0.3s, transform 0.3s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    animation: hoverAnimation 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #7ab5f4;
+    border-radius: 12px;
+    color: #007bff;
+    text-decoration: none;
+    width: 220px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.grade_button:hover {
+    background-color: #afd4ff9f;
+    color: #007bff;
+    text-decoration: none;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.164), 0 1px 10px rgba(0, 123, 255, 0.2);
+    border-color: #7fbdffad;
+    transform: translateY(-7px);
+}
+
+.grade-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    transition: transform 0.3s;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .grade_button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fdfeff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 123, 255, 0.1);
+    border-radius: 15px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section headings */
+h2 {
+    font-size: 24px;
+    color: #008cff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight:lighter;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* File list styling */
+.file-list {
+    list-style: none;
+    padding: 0;
+    font-weight: 300;
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.file-list li {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    color: #0068ad;
+    justify-content: space-between;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+    background-color: #d6eaff;
+    cursor: pointer;
+}
+
+.file-list li a {
+    text-decoration: none;
+    color: #438eff;
+    font-size: 16px;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.file-list li a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.file-list li:hover {
+    background-color: #b3d7fd;
+    text-decoration: none;
+    font-weight:315;
+    cursor: pointer;
+}
+
+.file-list li:hover::before {
+    left: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.empty-message {
+    margin-top: 20px;
+    font-style: italic;
+    color: #868e96;
+    text-align: center;
+    text-decoration: none;
+}
+
+.chapter-button {
+    display: block;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #7ab5f4;
+    border-radius: 10px;
+    color: #007bff;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border-color 0.3s, transform 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.chapter-button:hover {
+    background-color: #e1f1ffc5;
+    color: #0056b3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 8px 15px rgba(102, 176, 255, 0.2);
+    border-color: #57a8ff;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+/* Back button styling */
+.back-button {
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 25px 0;
+    background-color: #b62e2e;
+    color: #f0f0f0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #852222;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Heading style */
+.text_A {
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #007bff;
+    margin-bottom: 25px;
+    font-weight:900;
+}
+.text_AB {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #1f9aff;
+    margin-bottom: 25px;
+    font-weight:900;
+    text-decoration-line: overline underline;
+    background-color: #ecf8ff;
+    border-radius: 10px;
+}
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .subject-button {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .container {
+        padding: 20px;
+    }
+}
+
+@keyframes hoverAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
