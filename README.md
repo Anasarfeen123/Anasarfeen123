@@ -1,26 +1,27 @@
-<div align="center">
-  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjRpbmMwZ2VqeGJuajN3a29idDA4czlxYjAxY3Rtd2Y5cHQyM2JjayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/p28JyC1xJ70KKO83j4/giphy.gif" width="100"/>
-</div>
 
+<h2 align="center">
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
+  Hey, I'm Anas.
+</h2>
 <div align="center">
   <a href="https://www.linkedin.com/in/anas-arfeen-b94870366/">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white&style=square" alt="LinkedIn Badge"/>
   </a>
   <a href="mailto:Codecrusader07@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge"/>
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&style=square" alt="Email Badge"/>
   </a>
 </div>
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=Anasarfeen123&style=square&color=blue" alt="Profile Views" align="center"/>
+</div>
 
-<br/>
+<div align="center">
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTJ5ejAwN2RnN2xjOWZ1YTdlcGVjNmEwdGp1em12cTQ5M205N3ZyZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wwg1suUiTbCY8H8vIA/giphy.gif" width="100"/>
+</div>
 
-<img src="https://komarev.com/ghpvc/?username=Anasarfeen123&style=flat-square&color=blue" alt="Profile Views"/>
-
-<h1 align="center">
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
-  Hey, I'm Anas
-</h1>
 
 ---
+
 
 ### About Me
 
@@ -73,7 +74,10 @@ My personal motto: **love what you do... and overengineer it responsibly.**
 
 ### GitHub Stats
 
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=Anasarfeen123&theme=dark)](https://git.io/streak-stats)
+
 [![My Awesome Stats](https://awesome-github-stats.azurewebsites.net/user-stats/Anasarfeen123?cardType=github&theme=github-dark&fontFamily=42dot%20Sans&preferLogin=false)](https://git.io/awesome-stats-card)
+
 
 ---
 
