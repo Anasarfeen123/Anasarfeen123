@@ -141,15 +141,6 @@ anas@arfeen:~ $ tree --level 2 ~/projects/
 
 ---
 
-### 📊 GitHub Analytics
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Anasarfeen123&show_icons=true&theme=dracula&rank_icon=github" height="195px" alt="Anas's GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Anasarfeen123&theme=dracula" height="195px" alt="Anas's GitHub Streak" />
-</p>
-
----
-
 ### 🧠 Philosophy & Musings
 
 > 💡 *"If my code doesn't work… it's probably a race condition. Or the hardware. Mostly the hardware."* 🙃
